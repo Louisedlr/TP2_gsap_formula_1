@@ -1300,7 +1300,7 @@ a {
     }
 
     .bar-ecurie {
-        height: 25px;
+        height: 18px;
         width: 5px;
     }
 
@@ -1316,5 +1316,81 @@ a {
 
     .palmares-colone-1 {
         width: 50vw;
+    }
+
+    .pilote-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .circuit-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .podium-img {
+        text-align: center;
+        margin-top: 0vh;
+
+    }
+
+    .max {
+        margin-top: 12vh;
+    }
+
+    .classement-pilote h1 {
+        font-size: 2em;
+    }
+
+    .nom-pilote-2 {
+        width: 60vw;
+
+    }
+
+    /* .drapeau img {
+        width: 7vw;
+
+    }
+
+    .numero img {
+        width: 10vw;
+    } */
+
+    .pilote-flex p {
+        font-size: 1em;
+    }
+
+    .bar-pilote-2 {
+        height: 39px;
+        width: 5px;
+    }
+
+    .bar-pilote {
+        height: 23px;
+        width: 3px;
+    }
+
+    .drapeau img {
+        width: 5vw;
+    }
+
+    .pilote-nom-palmares img {
+        width: 8vw;
+    }
+
+    .pilote-flex {
+        margin-left: 0vw;
+    }
+
+    .podium-pilote {
+        margin-top: 0vw;
+    }
+
+    .classement h1 {
+        font-size: 3em;
     }
 }
