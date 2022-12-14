@@ -1,0 +1,757 @@
+// gsap.from(".titre-ecurie-ferrari",{
+// scrollTrigger:{
+// trigger:".trigger-titre-ferrari",
+// scrub: 1,
+// ease: "power2"
+// },
+// opacity:0,x:100, duration:1
+
+
+// })
+
+
+// gsap.from(".logo-team-ferrari",{
+// scrollTrigger:{
+// trigger:".logo-team-ferrari",
+// scrub: 1,
+
+// ease: "power2"
+// },
+// scale:0.5, duration:3,
+
+
+// })
+
+
+gsap.from(".ferrari-f1",{
+scrollTrigger:{
+trigger:".trigger-f1-ferrari",
+scrub: 1,
+markers: true,
+},
+x:-400, duration:1
+})
+
+
+
+// gsap.from(".titre-ecurie-mercedes",{
+// scrollTrigger:{
+// trigger:".trigger-titre-mercedes",
+// scrub: 1,
+// ease: "power2",
+// },
+// opacity:0.5,x:100, duration:5
+
+
+// })
+
+
+// gsap.from(".logo-team-mercedes",{
+// scrollTrigger:{
+// trigger:".logo-team-mercedes",
+// scrub: 1,
+
+// ease: "power2"
+// },
+// scale:0.5, duration:3,
+
+
+// })
+
+
+gsap.from(".mercedes-f1",{
+scrollTrigger:{
+trigger:".mercedes-f1",
+scrub: 1,
+markers: true,
+// end: '50%',
+snap: {
+snapTo: "labels", // snap to the closest label in the timeline
+duration: {min: 0.2, max: 3}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds
+(determined by velocity)
+delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
+ease: "power1.inOut" // the ease of the snap animation ("power3" by default)
+}
+},
+x:-500, duration:2
+
+})
+
+
+// gsap.from("#titre-ecurie-alipne",{
+// scrollTrigger:{
+// trigger:"#trigger-alpine",
+// scrub: 1,
+// },
+// opacity:0, xPercent:50, duration:1
+
+
+// })
+
+
+// gsap.from(".logo-team-alpine",{
+// scrollTrigger:{
+// // trigger:".logo-team-mercedes",
+// scrub: 1,
+
+// ease: "power2"
+// },
+// scale:0.5, duration:3,
+
+
+// })
+
+
+gsap.from(".alpine-f1",{
+scrollTrigger:{
+trigger:".trigger-f1-ferrari",
+scrub: 1,
+markers: true,
+},
+x:-600, duration:3
+})
+
+
+// gsap.from("#titre-ecurie-mclaren",{
+// scrollTrigger:{
+// trigger:"#trigger-mclaren",
+// scrub: 1,
+// },
+// opacity:0, xPercent:50, duration:1
+
+
+// })
+
+
+// gsap.from(".logo-team-mclaren",{
+// scrollTrigger:{
+// // trigger:".logo-team-mercedes",
+// scrub: 1,
+
+// ease: "power2"
+// },
+// scale:0.5, duration:3,
+
+
+// })
+
+
+gsap.from(".mclaren-f1",{
+scrollTrigger:{
+trigger:".trigger-f1-ferrari",
+scrub: 1,
+markers: true,
+},
+x:-700, duration:10
+})
+
+
+// gsap.from("#titre-ecurie-AR",{
+// scrollTrigger:{
+// trigger:"#trigger-AR",
+// scrub: 1,
+// },
+// opacity:0, xPercent:50, duration:1
+
+
+// })
+
+
+// gsap.from(".logo-team-AR",{
+// scrollTrigger:{
+// // trigger:".logo-team-mercedes",
+// scrub: 1,
+
+// ease: "power2"
+// },
+// scale:0.5, duration:3,
+
+
+// })
+
+
+gsap.from(".AR-f1",{
+scrollTrigger:{
+trigger:".trigger-f1-ferrari",
+scrub: 1,
+},
+x:-800, duration:5
+})
+
+// gsap.from("#titre-ecurie-AM",{
+// scrollTrigger:{
+// trigger:"#trigger-AM",
+// scrub: 1,
+// },
+// opacity:0, xPercent:50, duration:1
+
+
+// })
+
+
+// gsap.from(".logo-team-AM",{
+// scrollTrigger:{
+// // trigger:".logo-team-mercedes",
+// scrub: 1,
+
+// ease: "power2"
+// },
+// scale:0.5, duration:3,
+
+
+// })
+
+
+gsap.from(".AM-f1",{
+scrollTrigger:{
+trigger:".trigger-f1-ferrari",
+scrub: 1,
+},
+x:-900, duration:6
+})
+
+// gsap.from("#titre-ecurie-AT",{
+// scrollTrigger:{
+// trigger:"#trigger-AT",
+// scrub: 1,
+// },
+// opacity:0, xPercent:50, duration:1
+
+
+// })
+
+
+// gsap.from(".logo-team-AT",{
+// scrollTrigger:{
+// // trigger:".logo-team-mercedes",
+// scrub: 1,
+
+// ease: "power2"
+// },
+// scale:0.5, duration:3,
+
+
+// })
+
+
+gsap.from(".AT-f1",{
+scrollTrigger:{
+trigger:".trigger-f1-ferrari",
+scrub: 1,
+},
+x:-1000, duration:7
+})
+
+
+
+//
+<!-- <div class="pilote-flex max-vertsappen">
+// <div class="pilote-image ">
+//     <div class="classement-pilote">
+//         <h1>1</h1>
+//     </div>
+
+//     <div class="pilote-img">
+//         <img src="./images/max-pilote.png">
+//     </div>
+//     <div class="numero">
+//         <img src="./images/33.svg">
+//     </div>
+// </div>
+// <div class="pilote-nom-palmares max-gsap">
+
+//     <div class="palmares-casque-flex">
+//         <div class="palmares-pilote">
+//             <p>Nombre de grand prix : 163</p>
+//             <p>Championnat du monde : 2</p>
+//             <p>Podiums : 77</p>
+//             <p>Victoires : 35</p>
+//         </div>
+//         <div class="casque">
+//             <img src="./images/casque-max.png">
+//         </div>
+//     </div>
+
+
+// </div>
+// </div> -->
+//
+<!-- <div class="pilote-flex leclerc">
+// <div class="pilote-nom-palmares leclerc-gsap">
+//     <div class="leclerc-nom nom-pilote">
+//         <p class="nom">Charles <br> Leclerc</p>
+//         <div class="drapeau">
+//             <img src="./images/Monaco.svg">
+//         </div>
+//         <p class="date">16/10/1997</p>
+//     </div>
+//     <div class="palmares-casque-flex">
+//         <div class="palmares-pilote">
+//             <p>Nombre de grand prix : 102</p>
+//             <p>Championnat du monde : 0</p>
+//             <p>Podiums :24</p>
+//             <p>Victoires : 5</p>
+//         </div>
+//         <div class="casque">
+//             <img src="./images/casque-leclerc.png">
+//         </div>
+//     </div>
+// </div>
+// <div class="pilote-image">
+//     <div class="classement-pilote">
+//         <h1>2</h1>
+//     </div>
+
+//     <div class="pilote-img leclerc-img">
+//         <img src="./images/charles-pilote.png">
+//     </div>
+//     <div class="numero">
+//         <img src="./images/16.png">
+//     </div>
+// </div>
+
+// </div>
+// <div class="pilote-flex perez">
+// <div class="pilote-image">
+//     <div class="classement-pilote">
+//         <h1>3</h1>
+//     </div>
+
+//     <div class="pilote-img perez-img">
+//         <img src="./images/sergio-perez.png">
+//     </div>
+//     <div class="numero">
+//         <img src="./images/11.png">
+//     </div>
+// </div>
+// <div class="pilote-nom-palmares perez-gsap">
+//     <div class="perez-nom nom-pilote">
+//         <p class="nom">Sergio <br> Perez</p>
+//         <div class="drapeau">
+//             <img src="./images/Mexico.svg">
+//         </div>
+//         <p class="date">26/01/1990</p>
+//     </div>
+//     <div class="palmares-casque-flex">
+//         <div class="palmares-pilote">
+//             <p>Nombre de grand prix : 236</p>
+//             <p>Championnat du monde : 0</p>
+//             <p>Podiums : 26</p>
+//             <p>Victoires : 4</p>
+//         </div>
+//         <div class="casque">
+//             <img src="./images/casque-perez.png">
+//         </div>
+//     </div>
+
+
+// </div>
+// </div> -->
+{/* <div class="pilote-flex russell">
+    <div class="pilote-nom-palmares russell-gsap">
+        <div class="russell-nom nom-pilote">
+            <p class="nom">George <br> Russell</p>
+            <div class="drapeau">
+                <img src="./images/United_Kingdom.svg">
+            </div>
+            <p class="date">15/02/1998</p>
+        </div>
+        <div class="palmares-casque-flex">
+            <div class="palmares-pilote">
+                <p>Nombre de grand prix : 82</p>
+                <p>Championnat du monde : 0</p>
+                <p>Podiums : 9</p>
+                <p>Victoires : 1</p>
+            </div>
+            <div class="casque">
+                <img src="./images/casque-russel.png">
+            </div>
+        </div>
+    </div>
+    <div class="pilote-image">
+        <div class="classement-pilote">
+            <h1>4</h1>
+        </div>
+
+        <div class="pilote-img russell-img">
+            <img src="./images/russell-pilote.png">
+        </div>
+        <div class="numero">
+            <img src="./images/63.png">
+        </div>
+    </div> */}
+
+    //
+</div>
+// <div class="pilote-flex sainz">
+    // <div class="pilote-image">
+        // <div class="classement-pilote">
+            // <h1>5</h1>
+            // </div>
+
+        // <div class="pilote-img sainz-img">
+            // <img src="./images/sainz-pilote.png">
+            // </div>
+        // <div class="numero">
+            // <img src="./images/55.png">
+            // </div>
+        // </div>
+    // <div class="pilote-nom-palmares sainz-gsap">
+        // <div class="sainz-nom nom-pilote">
+            // <p class="nom">Carlos <br> Sainz</p>
+            // <div class="drapeau">
+                // <img src="./images/Spain.svg">
+                // </div>
+            // <p class="date">01/09/1994</p>
+            // </div>
+        // <div class="palmares-casque-flex">
+            // <div class="palmares-pilote">
+                // <p>Nombre de grand prix : 163</p>
+                // <p>Championnat du monde : 0</p>
+                // <p>Podiums : 15</p>
+                // <p>Victoires : 1</p>
+                // </div>
+            // <div class="casque">
+                // <img src="./images/casque-sainz.png">
+                // </div>
+            // </div>
+
+
+        // </div>
+    // </div>
+// <div class="pilote-flex lewis">
+    // <div class="pilote-nom-palmares lewis-gsap">
+        // <div class="lewis-nom nom-pilote">
+            // <p class="nom">Lewis <br> Hamilton</p>
+            // <div class="drapeau">
+                // <img src="./images/United_Kingdom.svg">
+                // </div>
+            // <p class="date">07/01/1985</p>
+            // </div>
+        // <div class="palmares-casque-flex">
+            // <div class="palmares-pilote">
+                // <p>Nombre de grand prix : 310</p>
+                // <p>Championnat du monde : 7</p>
+                // <p>Podiums : 188</p>
+                // <p>Victoires : 103</p>
+                // </div>
+            // <div class="casque">
+                // <img src="./images/casque_lewis.png">
+                // </div>
+            // </div>
+        // </div>
+    // <div class="pilote-image">
+        // <div class="classement-pilote">
+            // <h1>6</h1>
+            // </div>
+
+        // <div class="pilote-img lewis-img">
+            // <img src="./images/lewis-pilote.png">
+            // </div>
+        // <div class="numero">
+            // <img src="./images/44.png">
+            // </div>
+        // </div>
+
+    // </div>
+// <div class="pilote-flex lando">
+    // <div class="pilote-image">
+        // <div class="classement-pilote">
+            // <h1>7</h1>
+            // </div>
+
+        // <div class="pilote-img lando-img">
+            // <img src="./images/lando-pilote.png">
+            // </div>
+        // <div class="numero">
+            // <img src="./images/4.png">
+            // </div>
+        // </div>
+    // <div class="pilote-nom-palmares lando-gsap">
+        // <div class="lando-nom nom-pilote">
+            // <p class="nom">Lando <br> Norris</p>
+            // <div class="drapeau">
+                // <img src="./images/United_Kingdom.svg">
+                // </div>
+            // <p class="date">01/09/1994</p>
+            // </div>
+        // <div class="palmares-casque-flex">
+            // <div class="palmares-pilote">
+                // <p>Nombre de grand prix : 163</p>
+                // <p>Championnat du monde : 0</p>
+                // <p>Podiums : 15</p>
+                // <p>Victoires : 1</p>
+                // </div>
+            // <div class="casque">
+                // <img src="./images/casque_lando.png">
+                // </div>
+            // </div>
+
+
+        // </div>
+    // </div>
+// <div class="pilote-flex ocon">
+    // <div class="pilote-nom-palmares ocon-gsap">
+        // <div class="ocon-nom nom-pilote">
+            // <p class="nom">Esteban<br>Ocon</p>
+            // <div class="drapeau">
+                // <img src="./images/France.svg">
+                // </div>
+            // <p class="date">17/09/1996</p>
+            // </div>
+        // <div class="palmares-casque-flex">
+            // <div class="palmares-pilote">
+                // <p>Nombre de grand prix : 111</p>
+                // <p>Championnat du monde : 0</p>
+                // <p>Podiums : 2</p>
+                // <p>Victoires : 1</p>
+                // </div>
+            // <div class="casque">
+                // <img src="./images/casque-ocon.png">
+                // </div>
+            // </div>
+        // </div>
+    // <div class="pilote-image">
+        // <div class="classement-pilote">
+            // <h1>8</h1>
+            // </div>
+
+        // <div class="pilote-img ocon-img">
+            // <img src="./images/ocon-pilote.png">
+            // </div>
+        // <div class="numero">
+            // <img src="./images/31.png">
+            // </div>
+        // </div>
+
+    // </div>
+// <div class="pilote-flex alonzo">
+    // <div class="pilote-image">
+        // <div class="classement-pilote">
+            // <h1>9</h1>
+            // </div>
+
+        // <div class="pilote-img alonzo-img">
+            // <img src="./images/alonzo-pilote.png">
+            // </div>
+        // <div class="numero">
+            // <img src="./images/16.png">
+            // </div>
+        // </div>
+    // <div class="pilote-nom-palmares alonzo-gsap">
+        // <div class="alonzo-nom nom-pilote">
+            // <p class="nom">Fernando <br> Alonzo</p>
+            // <div class="drapeau">
+                // <img src="./images/Spain.svg">
+                // </div>
+            // <p class="date">29/07/1981</p>
+            // </div>
+        // <div class="palmares-casque-flex">
+            // <div class="palmares-pilote">
+                // <p>Nombre de grand prix : 358</p>
+                // <p>Championnat du monde : 2</p>
+                // <p>Podiums : 98</p>
+                // <p>Victoires : 32</p>
+                // </div>
+            // <div class="casque">
+                // <img src="./images/casque-alonzo.png">
+                // </div>
+            // </div>
+
+
+        // </div>
+    // </div>
+// <div class="pilote-flex bottas">
+    // <div class="pilote-nom-palmares bottas-gsap">
+        // <div class="bottas-nom nom-pilote">
+            // <p class="nom">Valterri<br>Bottas</p>
+            // <div class="drapeau">
+                // <img src="./images/Finland.svg">
+                // </div>
+            // <p class="date">17/09/1996</p>
+            // </div>
+        // <div class="palmares-casque-flex">
+            // <div class="palmares-pilote">
+                // <p>Nombre de grand prix : 111</p>
+                // <p>Championnat du monde : 0</p>
+                // <p>Podiums : 2</p>
+                // <p>Victoires : 1</p>
+                // </div>
+            // <div class="casque">
+                // <img src="./images/casque-bottas.png">
+                // </div>
+            // </div>
+        // </div>
+    // <div class="pilote-image">
+        // <div class="classement-pilote">
+            // <h1>10</h1>
+            // </div>
+
+        // <div class="pilote-img bottas-img">
+            // <img src="./images/bottas-pilote.png">
+            // </div>
+        // <div class="numero">
+            // <img src="./images/77.png">
+            // </div>
+        // </div>
+
+    // </div>
+// <div class="pilote-flex daniel">
+    // <div class="pilote-image">
+        // <div class="classement-pilote">
+            // <h1>11</h1>
+            // </div>
+
+        // <div class="pilote-img daniel-img">
+            // <img src="./images/daniel-pilote.png">
+            // </div>
+        // <div class="numero">
+            // <img src="./images/3.png">
+            // </div>
+        // </div>
+    // <div class="pilote-nom-palmares daniel-gsap">
+        // <div class="daniel-nom nom-pilote">
+            // <p class="nom">Daniel <br> Ricciardo</p>
+            // <div class="drapeau">
+                // <img src="./images/Australia.svg">
+                // </div>
+            // <p class="date">01/07/1989</p>
+            // </div>
+        // <div class="palmares-casque-flex">
+            // <div class="palmares-pilote">
+                // <p>Nombre de grand prix : 232</p>
+                // <p>Championnat du monde : 0</p>
+                // <p>Podiums : 32</p>
+                // <p>Victoires : 8</p>
+                // </div>
+            // <div class="casque">
+                // <img src="./images/casque-daniel.png">
+                // </div>
+            // </div>
+
+
+        // </div>
+    // </div>
+
+
+
+
+.sainz-nom {
+border: solid 5px #ed3935;
+
+}
+
+.sainz {
+margin-top: 5%;
+width: 90vw;
+height: 70vh;
+}
+
+.sainz-img img {
+width: 15vw;
+}
+
+.lewis-img img {
+width: 25vw;
+}
+
+.lewis-nom {
+border: solid 5px #6dd3be;
+}
+
+.lewis {
+margin-top: 5%;
+width: 90vw;
+height: 70vh;
+margin-left: 5%;
+}
+
+.leclerc-gsap {
+margin-left: 3%;
+}
+
+.russell-gsap {
+margin-left: 3%;
+}
+
+.lewis-gsap {
+margin-left: 3%;
+}
+
+
+.lando-img img {
+width: 25vw;
+}
+
+.lando-nom {
+border: solid 5px #f1813b;
+}
+
+.lando {
+margin-top: 5%;
+width: 90vw;
+height: 70vh;
+}
+
+
+
+.ocon-img img {
+width: 35vw;
+}
+
+.ocon-nom {
+border: solid 5px #3795d1;
+}
+
+.ocon {
+margin-top: 5%;
+width: 90vw;
+height: 70vh;
+margin-left: 5%;
+}
+
+
+.alonzo-img img {
+width: 35vw;
+}
+
+.alonzo-nom {
+border: solid 5px #3795d1;
+
+}
+
+.alonzo {
+margin-top: 5%;
+width: 90vw;
+height: 70vh;
+}
+
+
+.bottas-img img {
+width: 25vw;
+}
+
+.bottas-nom {
+border: solid 5px #c9304a;
+}
+
+.bottas {
+margin-top: 5%;
+width: 90vw;
+height: 70vh;
+margin-left: 5%;
+}
+
+.daniel-img img {
+width: 20vw;
+}
+
+.daniel-nom {
+border: solid 5px #f1813b;
+}
+
+.daniel {
+margin-top: 5%;
+width: 90vw;
+height: 70vh;
+}

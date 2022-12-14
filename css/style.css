@@ -1,0 +1,1320 @@
+@font-face {
+    font-family: 'Formula1';
+    font-weight: 100;
+    src:
+        url('/fonts/Formula1-Regular.woff') format('woff'),
+        url('/fonts/Formula1-Regular.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-family: 'Formula1';
+    font-weight: 200;
+    src:
+        url('/fonts/Formula1-Wide.woff2') format('woff2'),
+        url('/fonts/Formula1-Wide.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'Formula1';
+    font-weight: 300;
+    src:
+        url('/fonts/Formula1-Bold.woff2') format('woff2'),
+        url('/fonts/Formula1-Bold.woff') format('woff');
+
+}
+
+
+@font-face {
+    font-family: 'Formula1';
+    font-weight: 400;
+    src:
+        url('/fonts/Formula1-Black.woff2') format('woff2'),
+        url('/fontS/Formula1-Black.woff') format('woff');
+
+}
+
+body {
+    background-color: #FEFEFF;
+    font-family: 'Formula1', sans-serif;
+    overflow-x: hidden;
+    /* //height: 100vw; */
+    margin: 0;
+}
+
+.page-ecurie {
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-intro {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-pilote {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-circuit {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-information {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    color: #E03430;
+    font-size: 4em;
+    font-weight: 300;
+}
+
+h3 {
+    padding: 10px;
+    margin: 0;
+    color: #E03430;
+    font-size: 3.5em;
+    font-weight: 300;
+    text-shadow: 7px 7px 5px black;
+}
+
+h2 {
+    color: #E03430;
+    font-size: 9em;
+    font-weight: 400;
+    margin-left: 4%;
+    /* margin-top: 10%; */
+    /* text-shadow: 7px 7px 5px black; */
+}
+
+h4 {
+    color: #14151F;
+    font-size: 2em;
+    font-weight: 300;
+    margin-left: 1%;
+    margin-top: 3%;
+    /* margin: 0; */
+    /* text-shadow: 7px 7px 5px black; */
+}
+
+h5 {
+    color: #14151F;
+    font-weight: 100;
+    font-size: 1.5em;
+    margin-bottom: 0% !important;
+    height: 10vh;
+}
+
+h6 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-left: 10%;
+    margin-right: 5%;
+    text-shadow: 7px 7px 5px black;
+    /* mix-blend-mode: exclusion; */
+}
+
+p {
+    color: #14151F;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+.palmares-ecurie p {
+    color: #14151F;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.flex-menu {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+.menu-wrap {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    top: 3vh;
+    right: 1vw;
+    cursor: pointer;
+    z-index: 10;
+    /* align-items: center; */
+    /* margin-top: 5%;
+    margin-right: 3%; */
+
+}
+
+
+
+.menu-open {
+    position: fixed;
+    background-color: #14151F;
+    opacity: 0.9;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* width: 100vw;
+    height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    transition: 1s;
+    transform: translateY(-100vh);
+    transition: 0.7s;
+}
+
+.menu-active {
+    transform: translateY(0vh) !important;
+    transition: 1s;
+    /* mix-blend-mode: multiply; */
+}
+
+.menu-active .bar {
+    background-color: #E03430;
+}
+
+
+.bar {
+    background-color: #14151F;
+    height: 4px;
+    width: 50px;
+    margin-bottom: 13px;
+    transition: 0.5s ease-out;
+}
+
+.bar-3 {
+    width: 30px;
+}
+
+.menu-wrap:hover .bar-3 {
+    width: 50px;
+    transition: 0.2s ease-out;
+}
+
+
+.top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+.logo {
+    margin-left: 7%;
+    margin-top: 5%;
+}
+
+.titre-text {
+    display: block;
+}
+
+.titre-img {
+    display: none;
+}
+
+
+
+.titre-img img {
+    width: 15vw;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    margin-top: 3%;
+}
+
+.intro-img img {
+    width: 75vw;
+    max-width: 80vw;
+    padding: 20px;
+    transform: scaleX(-1);
+    margin-top: 3%;
+}
+
+.intro p {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+
+.flex-titre-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.titre-menu {
+    margin-bottom: 3%;
+}
+
+.ecurie-info {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    background-image: url('../images/image_ecuries.jpg');
+    background-position: center;
+    margin: 0;
+}
+
+.pilote-info {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    background-image: url('../images/podium_4.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.circuit-info {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    background-image: url('../images/singapour.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.information-info {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    background-image: url('../images/information.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.ecurie-info img {
+    width: 100vh;
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    width: 1000vw;
+    display: flex;
+    /* border-top: 50px white solid; */
+    /*border-bottom: 50px white solid;*/
+    /* border-left: 100px white solid; */
+}
+
+.thumbnail {
+    /* //display: grid;
+    //place-items: center; */
+    /* width: 800px; */
+    color: white;
+    /* margin-right: 20px;
+    padding: 20px; */
+}
+
+
+
+#RedBull {
+    width: 100vw;
+}
+
+#Ferrari {
+    width: 100vw;
+}
+
+#Mercedes {
+    width: 100vw;
+}
+
+#Alpine {
+    width: 100vw;
+}
+
+#Mclaren {
+    width: 100vw;
+}
+
+#Alpha-Romeo {
+    width: 100vw;
+}
+
+#Aston-martin {
+    width: 100vw;
+}
+
+#Alphatauri {
+    width: 100vw;
+}
+
+#Williams {
+    width: 100vw;
+}
+
+#Haas {
+    width: 100vw;
+}
+
+.titre-ecurie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: 7%;
+    /* margin-top: 2%; */
+}
+
+.bar-ecurie {
+    height: 35px;
+    width: 10px;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.bar-RB {
+    background-color: #3771c7;
+
+}
+
+.bar-ferrari {
+    background-color: #ed3935;
+
+}
+
+.bar-mercedes {
+    background-color: #6dd3be;
+}
+
+.bar-alpine {
+    background-color: #3795d1;
+}
+
+.bar-mclaren {
+    background-color: #f1813b;
+}
+
+.bar-AR {
+    background-color: #c9304a;
+}
+
+.bar-AM {
+    background-color: #3d8c74;
+}
+
+.bar-haas {
+    background-color: #b6babd;
+}
+
+.bar-AT {
+    background-color: #5f8eaa;
+}
+
+.bar-williams {
+    background-color: #4fbfdc;
+}
+
+.logo-team img {
+    width: 15%;
+    float: right;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+
+.f1-car {
+    display: flex;
+    justify-content: center;
+    /* width: 90vw; */
+    /* margin-left: 5%; */
+}
+
+.alpine-f1 {
+    margin-left: 0%;
+}
+
+.pilote {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    /* height: 20vh; */
+}
+
+.pilote-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    max-height: 20vh;
+    max-width: 50vw;
+
+
+}
+
+.pilote-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    max-height: 20vh;
+    max-width: 50vw;
+
+}
+
+.pilote img {
+    max-height: 8vw;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+.palmares-ecurie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+
+}
+
+.palmares-colone-1 {
+    flex-grow: 2;
+    margin-left: 20%;
+}
+
+.palmares-colone-2 {
+    flex-grow: 1;
+    margin-right: 5%;
+}
+
+
+.palmares-colone-3 {
+    flex-grow: 1;
+    margin-right: 25%;
+}
+
+.logo-team-mercedes img {
+    width: 20%;
+}
+
+.logo-team-ferrari img {
+    width: 10%;
+}
+
+.logo-team-alpine img {
+    width: 7%;
+}
+
+.logo-team-AT img {
+    width: 10%;
+}
+
+.logo-team-williams img {
+    width: 10%;
+}
+
+.classement h1 {
+
+    padding: 0;
+    margin: 0;
+    color: #14151F;
+    font-size: 4em;
+    font-weight: 300;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+
+/* Pilote */
+
+.pilote-image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    width: 50vw;
+}
+
+
+
+.bar-pilote {
+    height: 50px;
+    width: 8px;
+    margin-left: 2vw;
+    align-items: center;
+    /* margin-top: 3%; */
+
+}
+
+.max-bar {
+    background-color: #3771c7;
+}
+
+.leclerc-bar {
+    background-color: #ed3935;
+}
+
+.perez-bar {
+    background-color: #3771c7;
+
+}
+
+.numero img {
+    width: 6vw;
+}
+
+.numero {
+    margin-left: 5vh;
+}
+
+.numero-podium img {
+    width: 6vw;
+}
+
+.numero-podium {
+    margin-top: -4vh;
+    margin-left: 10vw;
+}
+
+.pilote-img img {
+    max-width: 20vw;
+    max-height: 20vw;
+    /* display: flex;
+    justify-content: center; */
+    /* margin: auto; */
+}
+
+.drapeau img {
+    width: 3vw;
+    opacity: 1;
+}
+
+/* .drapeau {
+    display: block;
+    align-items: center;
+} */
+
+.podium-pilote {
+    /* text-align: center; */
+    /* width: 80vw; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 10vh;
+    position: relative;
+
+}
+
+
+
+
+.pilote-nom-palmares {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 50vw;
+}
+
+.nom-pilote {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+    align-items: center;
+    align-content: stretch;
+    height: 10vh;
+    margin-left: 3vw;
+
+
+}
+
+.nom-pilote-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+    align-items: center;
+    align-content: stretch;
+    height: 10vh;
+    width: 40vw;
+
+}
+
+.nom {
+    margin-left: 1vw;
+    margin-right: 2vw;
+}
+
+.nom p {
+    font-size: 1em;
+}
+
+
+
+.max {
+    width: 28vw;
+}
+
+.leclerc {
+    width: 28vw;
+    margin-top: 12vh;
+}
+
+.perez {
+    width: 28vw;
+    margin-top: 13vh;
+}
+
+.pilote-numero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+
+
+.pilote-nom-palmares {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+    align-content: stretch;
+
+}
+
+
+
+
+.classement-pilote h1 {
+    color: #14151F;
+    font-size: 4em;
+}
+
+
+
+.nom {
+    font-weight: 300;
+}
+
+
+
+.perez-img img {
+    width: 15vw;
+}
+
+
+.pilote-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* width: 75vw; */
+    height: 15vh;
+    /* text-align: center; */
+    margin-left: 15vw;
+}
+
+.bar-pilote-2 {
+    height: 50px;
+    width: 8px;
+    margin-left: 2vw;
+    align-items: center;
+}
+
+.bar-russell {
+    background-color: #6dd3be;
+}
+
+.bar-sainz {
+    background-color: #ed3935;
+}
+
+.bar-lewis {
+    background-color: #6dd3be;
+}
+
+.bar-lando {
+    background-color: #f1813b;
+}
+
+.bar-ocon {
+    background-color: #3795d1;
+}
+
+.bar-alonzo {
+    background-color: #3795d1;
+}
+
+.bar-bottas {
+    background-color: #c9304a;
+}
+
+.bar-ricciardo {
+    background-color: #f1813b;
+}
+
+.circuit-plus-info {
+    height: 100vh;
+    width: 100vw;
+}
+
+.russell {
+    margin-top: 15vh;
+
+}
+
+.frise {
+
+    margin-left: 25vw;
+    position: relative;
+    width: 600vw;
+    height: 100vh;
+}
+
+.ligne {
+    background-color: #14151F;
+    width: 600vw;
+    height: 20px;
+    position: absolute;
+    top: 25vh
+}
+
+.tour-circuit {
+    width: 30vw;
+    margin-bottom: 5vh;
+}
+
+.rond-bahrain {
+
+    left: -1vw;
+}
+
+.rond {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: #14151F;
+    position: absolute;
+    top: 23vh;
+}
+
+
+.info-bahrain {
+
+    left: -10vw;
+
+
+}
+
+.info-circuit {
+    position: absolute;
+    top: 37vh;
+    /* left: 10vw; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* align-content: center; */
+}
+
+
+.titre-bahrain {
+    left: -15vw;
+
+
+
+}
+
+.titre-circuit {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    top: 10vh;
+    position: absolute;
+
+
+}
+
+.titre-circuit img {
+    width: 5vw;
+    height: 3vh;
+}
+
+.classement-circuit p {
+    font-size: 0.8em;
+}
+
+.classement-circuit {
+    margin-left: 2vw;
+}
+
+.titre-circuit p {
+    font-weight: 300;
+}
+
+.rond-jeddah {
+    left: 40vw;
+}
+
+
+.info-jeddah {
+
+    left: 25vw;
+
+}
+
+.titre-jeddah {
+    left: 30vw;
+
+}
+
+
+
+
+
+
+.rond-albert {
+    left: 75vw;
+}
+
+
+.info-albert {
+    left: 60vw;
+
+}
+
+.titre-albert {
+    left: 65vw;
+}
+
+
+
+
+.rond-enzo {
+    left: 115vw;
+}
+
+
+.info-enzo {
+
+    left: 100vw;
+
+}
+
+.titre-enzo {
+    left: 98vw;
+}
+
+.rond-miami {
+    left: 160vw;
+}
+
+
+.info-miami {
+    left: 145vw;
+
+}
+
+.titre-miami {
+    left: 140vw;
+}
+
+.rond-barcelona {
+    left: 205vw;
+}
+
+
+.info-barcelona {
+    left: 190vw;
+
+}
+
+.titre-barcelona {
+    left: 188vw;
+}
+
+.titre-barcelona img {
+    width: 3vw;
+    margin-left: 1vw;
+}
+
+.rond-monaco {
+    left: 243vw;
+}
+
+
+.info-monaco {
+    left: 228vw;
+
+}
+
+.titre-monaco {
+    left: 233vw;
+}
+
+.titre-monaco img {
+    width: 3vw;
+    margin-left: 1vw;
+
+}
+
+
+.rond-baku {
+    left: 275vw;
+}
+
+
+.info-baku {
+
+    left: 260vw;
+
+}
+
+.titre-baku {
+    left: 265vw;
+
+}
+
+
+.titre-baku img {
+    width: 3vw;
+    margin-left: 1vw;
+
+}
+
+.rond-montreal {
+    left: 310vw;
+}
+
+
+.info-montreal {
+    left: 295vw;
+
+}
+
+.titre-montreal {
+    left: 295vw;
+}
+
+
+.rond-silverstone {
+    left: 340vw;
+}
+
+
+.info-silverstone {
+    left: 330vw;
+
+}
+
+.titre-silverstone {
+    left: 330vw;
+}
+
+
+.rond-red-bull-ring {
+    left: 375vw;
+}
+
+
+.info-red-bull-ring {
+    left: 360vw;
+
+}
+
+.titre-red-bull-ring {
+    left: 367vw;
+}
+
+.titre-red-bull-ring img {
+    width: 3vw;
+    margin-left: 1vw;
+
+}
+
+
+.rond-paul-ricard {
+    left: 405vw;
+}
+
+
+.info-paul-ricard {
+    left: 392vw;
+
+}
+
+.titre-paul-ricard {
+    left: 395vw;
+}
+
+.titre-paul-ricard img {
+    width: 3vw;
+    margin-left: 1vw;
+
+}
+
+
+
+.rond-hungaroring {
+    left: 437vw;
+}
+
+
+.info-hungaroring {
+    left: 425vw;
+
+}
+
+.titre-hungaroring {
+    left: 430vw;
+}
+
+
+.rond-spa {
+    left: 468vw;
+}
+
+
+.info-spa {
+    left: 455vw;
+
+}
+
+.titre-spa {
+    left: 455vw;
+}
+
+.titre-spa img {
+    width: 3vw;
+    margin-left: 1vw;
+
+}
+
+
+.rond-zandvoort {
+    left: 510vw;
+}
+
+
+.info-zandvoort {
+    left: 495vw;
+
+}
+
+.titre-zandvoort {
+    left: 500vw;
+}
+
+
+.rond-monza {
+    left: 540vw;
+}
+
+
+.info-monza {
+    left: 530vw;
+
+}
+
+.titre-monza {
+    left: 530vw;
+}
+
+
+
+.texte-information {
+    width: 100vw;
+    height: 100vh;
+}
+
+.texte-information p {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.line-up img {
+    width: 20vw;
+}
+
+.planning img {
+    width: 20vw;
+}
+
+.flex-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.logo-f1 img {
+    width: 20vw;
+}
+
+.canal img {
+    width: 20vw;
+}
+
+.podium {
+    width: 100vw;
+    /* height: 100vh; */
+
+}
+
+.podium-img img {
+    width: 80vw;
+}
+
+.podium-img {
+    text-align: center;
+    margin-top: -14vh;
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 3em;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 450px) {
+    .titre-img {
+        display: block;
+    }
+
+    .titre-text {
+        display: none;
+    }
+
+    p {
+        font-size: 0.5em;
+    }
+
+    .ecurie-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    h2 {
+        font-size: 5em;
+    }
+
+    h6 {
+        font-size: 1em;
+    }
+
+    .f1-car img {
+        width: 80vw;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    .bar-ecurie {
+        height: 25px;
+        width: 5px;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    .palmares-ecurie {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .palmares-colone-1 {
+        flex-grow: 2;
+        margin-left: 0%;
+    }
+}

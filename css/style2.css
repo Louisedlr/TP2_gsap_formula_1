@@ -1,0 +1,271 @@
+/*** CSS Styles  ***/
+
+/* Général  */
+@font-face {
+	font-family: 'Formula1';
+	font-weight: 100;
+	src:
+		url('/fonts/Formula1-Regular.woff') format('woff'),
+		url('/fonts/Formula1-Regular.woff2') format('woff2');
+
+}
+
+@font-face {
+	font-family: 'Formula1';
+	font-weight: 200;
+	src:
+		url('/fonts/Formula1-Wide.woff2') format('woff2'),
+		url('/fonts/Formula1-Wide.woff') format('woff');
+
+}
+
+@font-face {
+	font-family: 'Formula1';
+	font-weight: 300;
+	src:
+		url('/fonts/Formula1-Bold.woff2') format('woff2'),
+		url('/fonts/Formula1-Bold.woff') format('woff');
+
+}
+
+
+@font-face {
+	font-family: 'Formula1';
+	font-weight: 400;
+	src:
+		url('/fonts/Formula1-Black.woff2') format('woff2'),
+		url('/fontS/Formula1-Black.woff') format('woff');
+
+}
+
+
+body {
+	background-color: #FEFEFF;
+	font-family: 'Formula1', sans-serif;
+	height: 200vh;
+	width: 100%;
+	display: inline-block;
+	color: #134a3a;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+	color: #E03430;
+	font-size: 4em;
+	font-weight: 300;
+	/* line-height: 1em; */
+	/* letter-spacing: -3px; */
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 0.4em;
+	padding: 5px 0;
+	margin: 0;
+}
+
+h3 {
+	padding: 10px;
+	margin: 0;
+	color: #E03430;
+	font-size: 50%;
+	font-weight: 300;
+	/* opacity: 1; */
+}
+
+p {
+	color: #14151F;
+	font-weight: 100;
+	font-size: 1.5em;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+/* Mise en page  */
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	;
+}
+
+.row {
+	width: 100%;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+
+
+.top {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+
+/* Menu */
+.menu-wrap {
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.menu-wrap:hover .bar-3 {
+	width: 50px;
+	transition: 0.2s ease-out;
+}
+
+.bar {
+	background-color: #14151F;
+	height: 5px;
+	width: 50px;
+	margin-bottom: 15px;
+	transition: 0.5s ease-out;
+}
+
+.bar-3 {
+	width: 30px;
+}
+
+.menu-open {
+	position: fixed;
+	background-color: #14151F;
+	opacity: 0.9;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #8bb4ca;
+	z-index: 9;
+	transition: 1s;
+	transform: translateY(-100vh);
+	transition: 0.7s;
+}
+
+.menu-active {
+	transform: translateY(0vh) !important;
+	transition: 1s;
+	/* mix-blend-mode: multiply; */
+}
+
+.menu-active .bar {
+	background-color: #E03430;
+}
+
+
+/* Logotype */
+.logo_wrap {
+
+	margin-left: 7%;
+	margin-top: 3%;
+}
+
+.logo_wrap img {
+	max-width: 70px;
+}
+
+/* Introduction */
+.introduction {
+	/* width: 100%;
+	height: 100vh; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.introduction img {
+	width: 1000px;
+	max-width: 100%;
+	padding: 20px;
+	transform: scaleX(-1);
+	margin-top: 3%;
+}
+
+.text-intro {
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-top: 5%;
+}
+
+/* Footer */
+.footer-wrap {
+	position: fixed;
+	width: 100%;
+	padding: 20px 20px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: 0.6em;
+	font-weight: 100;
+}
+
+.footer-wrap a {
+	position: relative;
+	cursor: pointer;
+}
+
+.footer-wrap a::after {
+	content: "";
+	width: 0%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #134a3a;
+	height: 1px;
+	transition: 1s;
+}
+
+.footer-wrap a:hover::after {
+	width: 100%;
+	transition: 0.3s;
+}
+
+/* Personnage */
+.perso_wrap {
+	width: 100%;
+	text-align: center;
+}
+
+.perso_wrap img {
+	height: 500px;
+}
+
+.perso_wrap .dialogue {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #fff;
+	padding: 5px 0;
+	margin: 0;
+}
+
+
+.constructeur {
+	background-color: #E03430;
+	width: 100%;
+	height: 150vh;
+	margin-top: 10%;
+
+}
