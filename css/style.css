@@ -1402,4 +1402,8 @@ a {
     .thumbnail {
         margin-top: 8vh;
     }
+
+    .pilote img {
+        margin-top: 3vh;
+    }
 }
