@@ -533,7 +533,7 @@ a {
 .pilote img {
     max-height: 8vw;
     margin-right: 3%;
-    margin-top: 2%;
+    margin-top: 3vh;
 }
 
 .palmares-ecurie {
@@ -649,11 +649,16 @@ a {
 }
 
 .pilote-img img {
-    max-width: 20vw;
-    max-height: 20vw;
+    max-width: 14vw;
+    max-height: 16vw;
     /* display: flex;
     justify-content: center; */
     /* margin: auto; */
+}
+
+.max-img img {
+    max-width: 22vw;
+    max-height: 16vw;
 }
 
 .drapeau img {
@@ -675,7 +680,7 @@ a {
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     position: relative;
 
 }
@@ -729,19 +734,7 @@ a {
 
 
 
-.max {
-    width: 28vw;
-}
 
-.leclerc {
-    width: 28vw;
-    margin-top: 12vh;
-}
-
-.perez {
-    width: 28vw;
-    margin-top: 13vh;
-}
 
 .pilote-numero {
     display: flex;
@@ -1261,15 +1254,104 @@ a {
 
 }
 
+.pilote-flex {
+    margin-left: 0vw;
+}
+
+.podium-pilote {
+    margin-top: 0vw;
+}
+
+.max {
+    width: 28vw;
+}
+
+.leclerc {
+    width: 28vw;
+    margin-top: 12vh;
+}
+
+.perez {
+    width: 28vw;
+    margin-top: 13vh;
+}
 
 
-@media only screen and (max-width: 800px) {
-    h1 {
-        font-size: 3em;
+@media only screen and (max-width: 1400px) {
+
+    .podium-img img {
+        width: 80vw;
+    }
+
+    .podium-img {
+        text-align: center;
+        margin-top: 0vh;
+
     }
 
 
+    .max {
+        margin-top: 8vh;
+    }
+}
 
+
+@media only screen and (max-width: 1050px) {
+    h2 {
+        font-size: 7em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    .page-ecurie p {
+        font-size: 0.8em;
+    }
+
+    /* .leclerc img {
+        height: 25vh;
+    } */
+
+    .nom-pilote p {
+        font-size: 1.5em;
+    }
+
+    .logo-team {
+        margin-top: 20vh;
+    }
+
+
+    .podium-img img {
+        width: 80vw;
+    }
+
+    .podium-img {
+        text-align: center;
+        margin-top: 0vh;
+
+    }
+
+
+    .max {
+        margin-top: 8vh;
+    }
+
+    .ligne {
+        top: 24vh
+    }
+
+    /* .leclerc {
+        margin-top: 2vh;
+    }
+
+    .perez {
+        margin-top: 2vh;
+    } */
 }
 
 
@@ -1286,12 +1368,7 @@ a {
         font-size: 0.5em;
     }
 
-    .ecurie-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
-    }
 
     h2 {
         font-size: 3.6em;
@@ -1301,9 +1378,7 @@ a {
         font-size: 1em;
     }
 
-    .f1-car img {
-        width: 80vw;
-    }
+
 
     h4 {
         font-size: 1em;
@@ -1318,39 +1393,20 @@ a {
         font-size: 1em;
     }
 
-    .palmares-ecurie {
-        display: flex;
-        flex-direction: column;
 
-    }
 
     .palmares-colone-1 {
         width: 50vw;
     }
 
-    .pilote-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
-    }
 
-    .circuit-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
-    }
 
-    .podium-img {
-        text-align: center;
-        margin-top: 0vh;
-
-    }
-
+    /* 
     .max {
         margin-top: 12vh;
-    }
+    } */
 
     .classement-pilote h1 {
         font-size: 2em;
@@ -1392,13 +1448,7 @@ a {
         width: 8vw;
     }
 
-    .pilote-flex {
-        margin-left: 0vw;
-    }
 
-    .podium-pilote {
-        margin-top: 0vw;
-    }
 
     .classement h1 {
         font-size: 2em;
@@ -1408,9 +1458,6 @@ a {
         margin-top: 10vh;
     }
 
-    .pilote img {
-        margin-top: 3vh;
-    }
 
     .titre-circuit img {
         /* width: 5vw; */
@@ -1427,10 +1474,6 @@ a {
         top: 29vh;
     }
 
-    .titre-circuit {
-        width: 20vw;
-        margin-top: 10vh;
-    }
 
     .titre-circuit p {
         font-size: 0.6em;
@@ -1458,5 +1501,122 @@ a {
 
     h3 {
         font-size: 2.5em;
+    }
+
+    .palmares-ecurie {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+
+
+@media only screen and (max-width: 850px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .ecurie-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    h2 {
+        font-size: 7em;
+    }
+
+    .pilote-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .f1-car img {
+        width: 80vw;
+    }
+
+    .circuit-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+
+
+
+
+    .palmares-colone-1 {
+        margin-left: 10vw;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    .palmares-ecurie p {
+        font-size: 0.8em;
+    }
+
+
+
+    .podium-img {
+        text-align: center;
+        margin-top: 0vh;
+
+    }
+
+
+    .titre-circuit {
+        width: 20vw;
+        top: 7vh;
+        /* margin-top: 10vh; */
+    }
+
+    .classement-pilote h1 {
+        font-size: 3em;
+    }
+
+    .bar-ecurie {
+        height: 24px;
+        width: 5px;
+        margin-top: 2vh;
+    }
+
+    .bar-pilote-2 {
+        height: 34px;
+        width: 5px;
+    }
+
+    .bar-pilote {
+        height: 34px;
+        width: 5px;
+    }
+
+    .titre-bahrain {
+        left: -5vw;
+    }
+
+    .ligne {
+        top: 16vh;
+    }
+
+    .rond {
+        top: 15vh;
+    }
+
+    .info-circuit {
+
+        top: 21vh;
+        width: 23vw;
+
     }
 }
