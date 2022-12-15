@@ -43,6 +43,11 @@ body {
     margin: 0;
 }
 
+.global {
+    overflow-x: hidden;
+
+}
+
 .page-ecurie {
 
     width: 100vw;
@@ -207,7 +212,7 @@ a {
 
 
 .bar {
-    background-color: #14151F;
+    background-color: #E03430;
     height: 4px;
     width: 50px;
     margin-bottom: 13px;
@@ -1278,7 +1283,7 @@ a {
     }
 
     p {
-        font-size: 0.4em;
+        font-size: 0.5em;
     }
 
     .ecurie-info {
@@ -1289,11 +1294,11 @@ a {
     }
 
     h2 {
-        font-size: 4.9em;
+        font-size: 3.6em;
     }
 
     h6 {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .f1-car img {
@@ -1301,7 +1306,7 @@ a {
     }
 
     h4 {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .bar-ecurie {
@@ -1310,7 +1315,7 @@ a {
     }
 
     h5 {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .palmares-ecurie {
@@ -1348,7 +1353,7 @@ a {
     }
 
     .classement-pilote h1 {
-        font-size: 1.9em;
+        font-size: 2em;
     }
 
     .nom-pilote-2 {
@@ -1366,7 +1371,7 @@ a {
     } */
 
     .pilote-flex p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .bar-pilote-2 {
@@ -1396,7 +1401,7 @@ a {
     }
 
     .classement h1 {
-        font-size: 1.9em;
+        font-size: 2em;
     }
 
     .thumbnail {
@@ -1405,5 +1410,49 @@ a {
 
     .pilote img {
         margin-top: 3vh;
+    }
+
+    .titre-circuit img {
+        /* width: 5vw; */
+        height: 1vh;
+    }
+
+    .ligne {
+        height: 11px;
+    }
+
+    .rond {
+        width: 30px;
+        height: 30px;
+        top: 29vh;
+    }
+
+    .titre-circuit {
+        width: 20vw;
+        margin-top: 10vh;
+    }
+
+    .titre-circuit p {
+        font-size: 0.6em;
+    }
+
+    .titre-bahrain {
+        left: -8vw;
+    }
+
+    .classement-circuit {
+        width: 32vw;
+    }
+
+    .classement-circuit p {
+        font-size: 0.5em;
+    }
+
+    .ligne {
+        top: 30vh;
+    }
+
+    .info-circuit {
+        top: 36vh;
     }
 }
