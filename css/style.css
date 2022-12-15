@@ -1441,7 +1441,7 @@ a {
     }
 
     .classement-circuit {
-        width: 32vw;
+        width: 27vw;
     }
 
     .classement-circuit p {
@@ -1454,5 +1454,9 @@ a {
 
     .info-circuit {
         top: 36vh;
+    }
+
+    h3 {
+        font-size: 2.5em;
     }
 }
