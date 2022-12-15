@@ -1345,7 +1345,7 @@ a {
 }
 
 
-@media only screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
 
     .podium-img img {
         width: 80vw;
@@ -1364,7 +1364,7 @@ a {
 }
 
 
-@media only screen and (max-width: 1050px) {
+@media (max-width: 1050px) {
     h2 {
         font-size: 7em;
     }
@@ -1377,17 +1377,17 @@ a {
         font-size: 1.5em;
     }
 
-    .page-ecurie p {
+    /* .page-ecurie p {
         font-size: 0.8em;
-    }
+    } */
 
     /* .leclerc img {
         height: 25vh;
     } */
 
-    .nom-pilote p {
+    /* .nom-pilote p {
         font-size: 1.5em;
-    }
+    } */
 
     .logo-team {
         margin-top: 20vh;
@@ -1423,7 +1423,145 @@ a {
 }
 
 
-@media only screen and (max-width: 450px) {
+
+
+@media(max-width: 850px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .ecurie-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    h2 {
+        font-size: 6em;
+    }
+
+    .pilote-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .f1-car img {
+        width: 80vw;
+    }
+
+    .circuit-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+
+
+
+
+    .palmares-colone-1 {
+        margin-left: 10vw;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    .palmares-ecurie p {
+        font-size: 0.8em;
+    }
+
+
+
+    .podium-img {
+        text-align: center;
+        margin-top: 0vh;
+
+    }
+
+
+    .titre-circuit {
+        width: 20vw;
+        top: 7vh;
+        /* margin-top: 10vh; */
+    }
+
+    .classement-pilote h1 {
+        font-size: 3em;
+    }
+
+    .bar-ecurie {
+        height: 24px;
+        width: 5px;
+        margin-top: 2vh;
+    }
+
+    .bar-pilote-2 {
+        height: 34px;
+        width: 5px;
+    }
+
+    .bar-pilote {
+        height: 34px;
+        width: 5px;
+    }
+
+    .titre-bahrain {
+        left: -5vw;
+    }
+
+    .ligne {
+        top: 16vh;
+    }
+
+    .rond {
+        top: 15vh;
+    }
+
+    .info-circuit {
+
+        top: 21vh;
+        width: 23vw;
+
+    }
+
+    .flex-img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+
+    }
+
+    .suivre {
+        margin: 0;
+    }
+
+    .texte-information h5 {
+        height: 5vh;
+    }
+
+    .logo-f1 {
+        margin-bottom: 2vh;
+    }
+
+    #sous-titre-information {
+        font-size: 4em;
+    }
+
+}
+
+
+
+@media(max-width: 450px) {
     .titre-img {
         display: block;
     }
@@ -1439,7 +1577,7 @@ a {
 
 
     h2 {
-        font-size: 3.6em;
+        font-size: 4em;
     }
 
     h6 {
@@ -1578,144 +1716,8 @@ a {
     }
 
     #sous-titre-information {
-        font-size: 5em;
+        font-size: 2.5em;
     }
 
-
-}
-
-
-
-@media only screen and (max-width: 850px) {
-    h1 {
-        font-size: 3em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    .ecurie-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-    h2 {
-        font-size: 7em;
-    }
-
-    .pilote-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-    .f1-car img {
-        width: 80vw;
-    }
-
-    .circuit-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-
-
-
-
-    .palmares-colone-1 {
-        margin-left: 10vw;
-    }
-
-    h4 {
-        font-size: 1.5em;
-    }
-
-    .palmares-ecurie p {
-        font-size: 0.8em;
-    }
-
-
-
-    .podium-img {
-        text-align: center;
-        margin-top: 0vh;
-
-    }
-
-
-    .titre-circuit {
-        width: 20vw;
-        top: 7vh;
-        /* margin-top: 10vh; */
-    }
-
-    .classement-pilote h1 {
-        font-size: 3em;
-    }
-
-    .bar-ecurie {
-        height: 24px;
-        width: 5px;
-        margin-top: 2vh;
-    }
-
-    .bar-pilote-2 {
-        height: 34px;
-        width: 5px;
-    }
-
-    .bar-pilote {
-        height: 34px;
-        width: 5px;
-    }
-
-    .titre-bahrain {
-        left: -5vw;
-    }
-
-    .ligne {
-        top: 16vh;
-    }
-
-    .rond {
-        top: 15vh;
-    }
-
-    .info-circuit {
-
-        top: 21vh;
-        width: 23vw;
-
-    }
-
-    .flex-img {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        margin: 0;
-
-    }
-
-    .suivre {
-        margin: 0;
-    }
-
-    .texte-information h5 {
-        height: 5vh;
-    }
-
-    .logo-f1 {
-        margin-bottom: 2vh;
-    }
-
-    #sous-titre-information {
-        font-size: 4em;
-    }
 
 }
