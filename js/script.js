@@ -507,3 +507,37 @@ ScrollTrigger.create({
     scrub: true,
     animation: tl_information
 });
+
+
+
+gsap.from(".line-up",{
+        scrollTrigger:{
+            trigger:".planning",
+            scrub: 1,
+        },
+        scale:0.8,opacity:0.5, duration:2,
+        ease: "power2",
+    
+    })
+
+    gsap.from(".planning",{
+        scrollTrigger:{
+            trigger:".planning",
+            scrub: 1,
+            ease: "power2",
+        },
+        scale:0.8,opacity:0.5, duration:2
+         
+    
+    })
+
+    gsap.from(".suivre",{
+        scrollTrigger:{
+            trigger:".planning",
+            scrub: 1,
+            ease: "power2",
+        },
+        scale:0.8,opacity:0.5, duration:1
+         
+    
+    })

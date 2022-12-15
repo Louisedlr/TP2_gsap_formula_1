@@ -15,7 +15,7 @@
     <div>
         <div class="page-intro">
 
-            <div class="top">
+            <div class="top" id="top">
 
                 <!-- Logotype -->
 
@@ -44,7 +44,7 @@
 
             <!-- Menu open-->
             <div class="menu-open flex-titre-menu">
-                <a href="#intro">
+                <a href="#top">
                     <h3 class="titre-menu">Introduction</h3>
                 </a>
                 <a href="#ecurie">
@@ -52,6 +52,9 @@
                 </a>
                 <a href="#pilote">
                     <h3 class="titre-menu">Les Pilotes</h3>
+                </a>
+                <a href="#information">
+                    <h3 class="titre-menu">Informations</h3>
                 </a>
             </div>
 
@@ -1018,28 +1021,39 @@
                                             <img src="./images/planning.jpg">
                                         </div>
                                     </div>
-                                    <h3>Pour suivre la f1 : </h3>
-                                    <div class="flex-img">
+                                    <h5>Pour suivre la f1 : </h5>
+                                    <div class="flex-img suivre">
                                         <div class="logo-f1">
-                                            <img src="./images/F1_logo.png">
+                                            <a href="https://www.formula1.com/en.html" target="_blank">
+                                                <img src="./images/F1_logo.png"></a>
                                         </div>
                                         <div class="canal">
-                                            <img src="./images/Canal+.svg">
+                                            <a href="https://www.canalplus.com/sport/formule-1/" target="_blank">
+                                                <img src="./images/Canal+.svg"></a>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
+
+
                         </div>
 
 
                     </div>
 
 
-
                 </div>
             </div>
         </div>
+        <div class="footer-wrap">
+            <div class="flex flex-row">
+                <!-- <div class="copyright">© Tous droits réservés - Novembre 2020 - </div> -->
+                <div class="credit">Réalisation web : <a href="https://github.com/Louisedlr/TP2_gsap_formula_1"
+                        target="_blank">Louise Delrieu</a></div>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>

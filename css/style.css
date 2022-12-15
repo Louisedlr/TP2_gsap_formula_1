@@ -155,6 +155,24 @@ a {
     text-decoration: none !important;
 }
 
+
+.bar {
+    background-color: #E03430;
+    height: 4px;
+    width: 50px;
+    margin-bottom: 13px;
+    transition: 0.5s ease-out;
+}
+
+.bar-3 {
+    width: 30px;
+}
+
+.menu-wrap:hover .bar-3 {
+    width: 50px;
+    transition: 0.2s ease-out;
+}
+
 .flex-menu {
 
     display: flex;
@@ -208,24 +226,6 @@ a {
 
 .menu-active .bar {
     background-color: #E03430;
-}
-
-
-.bar {
-    background-color: #E03430;
-    height: 4px;
-    width: 50px;
-    margin-bottom: 13px;
-    transition: 0.5s ease-out;
-}
-
-.bar-3 {
-    width: 30px;
-}
-
-.menu-wrap:hover .bar-3 {
-    width: 50px;
-    transition: 0.2s ease-out;
 }
 
 
@@ -911,8 +911,8 @@ a {
     align-content: stretch;
     top: 10vh;
     position: absolute;
-
-
+    width: 30vw;
+    margin-bottom: 2vh;
 }
 
 .titre-circuit img {
@@ -1200,43 +1200,70 @@ a {
     left: 530vw;
 }
 
+.texte-information p {
+    padding-top: 10vh;
+}
+
 
 
 .texte-information {
-    width: 100vw;
     height: 100vh;
+
+    margin-left: 7vw;
+    margin-right: 7vw;
 }
 
-.texte-information p {
-    margin-top: 5vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
+.texte-information h5 {
+    font-weight: 300;
+    color: #14151F;
+    font-size: 1.5em;
+
 }
 
 .line-up img {
-    width: 20vw;
+    width: 30vw;
 }
 
+
 .planning img {
-    width: 20vw;
+    width: 30vw;
+}
+
+
+.suivre {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
 }
 
 .flex-img {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: stretch;
     align-content: stretch;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .logo-f1 img {
-    width: 20vw;
+    width: 15vw;
+}
+
+.logo-f1 img:hover {
+    width: 18vw;
+    cursor: pointer;
 }
 
 .canal img {
-    width: 20vw;
+    width: 15vw;
 }
+
+.canal img:hover {
+    width: 18vw;
+    cursor: pointer;
+}
+
 
 .podium {
     width: 100vw;
@@ -1255,7 +1282,7 @@ a {
 }
 
 .pilote-flex {
-    margin-left: 0vw;
+    margin-left: 10vw;
 }
 
 .podium-pilote {
@@ -1264,6 +1291,7 @@ a {
 
 .max {
     width: 28vw;
+    margin-top: -3vh;
 }
 
 .leclerc {
@@ -1274,6 +1302,46 @@ a {
 .perez {
     width: 28vw;
     margin-top: 13vh;
+}
+
+
+
+/* Footer */
+.footer-wrap {
+    mix-blend-mode: exclusion;
+    position: fixed;
+    /* width: 100%; */
+    padding: 20px 20px;
+    bottom: 0;
+    right: 0;
+    right: 0;
+    font-size: 0.6em;
+    font-weight: 100;
+    color: white;
+}
+
+.footer-wrap a {
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+
+.footer-wrap a::after {
+    mix-blend-mode: initial;
+    content: "";
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #E03430;
+    height: 1px;
+    transition: 1s;
+}
+
+.footer-wrap a:hover::after {
+    mix-blend-mode: initial;
+    width: 100%;
+    transition: 0.3s;
 }
 
 
@@ -1508,6 +1576,12 @@ a {
         flex-direction: column;
 
     }
+
+    #sous-titre-information {
+        font-size: 5em;
+    }
+
+
 }
 
 
@@ -1619,4 +1693,29 @@ a {
         width: 23vw;
 
     }
+
+    .flex-img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+
+    }
+
+    .suivre {
+        margin: 0;
+    }
+
+    .texte-information h5 {
+        height: 5vh;
+    }
+
+    .logo-f1 {
+        margin-bottom: 2vh;
+    }
+
+    #sous-titre-information {
+        font-size: 4em;
+    }
+
 }
