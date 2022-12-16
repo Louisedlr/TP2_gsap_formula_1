@@ -183,12 +183,43 @@ a {
     align-content: stretch;
 }
 
+.sound {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    top: 2vh;
+    margin-right: 7vw;
+    cursor: pointer;
+    z-index: 15;
+}
+
+.sound img {
+    width: 50px;
+}
+
+#sound-off {
+    display: block;
+}
+
+#sound-on {
+    display: none;
+}
+
+.flex-sound-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: stretch;
+}
+
 .menu-wrap {
     position: fixed;
     width: 100px;
     height: 100px;
     top: 3vh;
-    right: 1vw;
+    /* right: 1vw; */
     cursor: pointer;
     z-index: 10;
     /* align-items: center; */
@@ -550,6 +581,7 @@ a {
     /* width: 50vw; */
     flex-grow: 2;
     margin-left: 20%;
+    width: 30vw;
 }
 
 .palmares-colone-2 {
@@ -829,6 +861,42 @@ a {
     background-color: #f1813b;
 }
 
+.bar-vettel {
+    background-color: #3d8c74;
+}
+
+.bar-mag {
+    background-color: #b6babd;
+}
+
+.bar-gasly {
+    background-color: #5f8eaa;
+}
+
+.bar-stroll {
+    background-color: #3d8c74;
+}
+
+.bar-mick {
+    background-color: #b6babd;
+}
+
+.bar-yuki {
+    background-color: #5f8eaa;
+}
+
+.bar-zhou {
+    background-color: #c9304a;
+}
+
+.bar-albon {
+    background-color: #4fbfdc;
+}
+
+.bar-latifi {
+    background-color: #4fbfdc;
+}
+
 .circuit-plus-info {
     height: 100vh;
     width: 100vw;
@@ -841,18 +909,19 @@ a {
 
 .frise {
 
-    margin-left: 25vw;
+    margin-left: 27vw;
     position: relative;
-    width: 600vw;
+    width: 850vw;
     height: 100vh;
 }
 
 .ligne {
     background-color: #14151F;
-    width: 600vw;
+    width: 760vw;
     height: 20px;
     position: absolute;
-    top: 25vh
+    top: 25vh;
+    margin-left: 14vw;
 }
 
 .tour-circuit {
@@ -860,10 +929,12 @@ a {
     margin-bottom: 5vh;
 }
 
-.rond-bahrain {
+/* 
+.rond-
+rain {
 
     left: -1vw;
-}
+} */
 
 .rond {
     width: 50px;
@@ -872,15 +943,18 @@ a {
     background: #14151F;
     position: absolute;
     top: 23vh;
+    margin-left: 12vw;
+
 }
 
 
-.info-bahrain {
+/* .info-
+rain {
 
     left: -10vw;
 
 
-}
+} */
 
 .info-circuit {
     position: absolute;
@@ -895,12 +969,13 @@ a {
 }
 
 
-.titre-bahrain {
+/* .titre-
+rain {
     left: -15vw;
 
 
 
-}
+} */
 
 .titre-circuit {
     display: flex;
@@ -916,8 +991,8 @@ a {
 }
 
 .titre-circuit img {
-    width: 5vw;
-    height: 3vh;
+    width: 3vw;
+    max-height: 3vh;
 }
 
 .classement-circuit p {
@@ -932,272 +1007,96 @@ a {
     font-weight: 300;
 }
 
-.rond-jeddah {
-    left: 40vw;
-}
 
 
-.info-jeddah {
-
-    left: 25vw;
-
-}
-
-.titre-jeddah {
-    left: 30vw;
-
+.flex-circuit {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* justify-content: space-around;
+    align-items: center;
+    align-content: stretch; */
 }
 
 
 
-
-
-
-.rond-albert {
-    left: 75vw;
+.jeddah {
+    margin-left: 40vw
 }
 
-
-.info-albert {
-    left: 60vw;
-
+.albert {
+    margin-left: 80vw;
 }
 
-.titre-albert {
-    left: 65vw;
+.enzo {
+    margin-left: 120vw;
 }
 
-
-
-
-.rond-enzo {
-    left: 115vw;
+.miami {
+    margin-left: 160vw;
 }
 
-
-.info-enzo {
-
-    left: 100vw;
-
+.barcelona {
+    margin-left: 200vw;
 }
 
-.titre-enzo {
-    left: 98vw;
+.monaco {
+    margin-left: 240vw;
 }
 
-.rond-miami {
-    left: 160vw;
+.baku {
+    margin-left: 280vw;
 }
 
-
-.info-miami {
-    left: 145vw;
-
+.montreal {
+    margin-left: 320vw;
 }
 
-.titre-miami {
-    left: 140vw;
+.silverstone {
+    margin-left: 360vw;
 }
 
-.rond-barcelona {
-    left: 205vw;
+.red-bull-ring {
+    margin-left: 400vw;
 }
 
+.paul-ricard {
+    margin-left: 440vw;
+}
 
-.info-barcelona {
-    left: 190vw;
+.hungaroring {
+    margin-left: 480vw;
+}
+
+.spa {
+    margin-left: 520vw;
 
 }
 
-.titre-barcelona {
-    left: 188vw;
-}
-
-.titre-barcelona img {
-    width: 3vw;
-    margin-left: 1vw;
-}
-
-.rond-monaco {
-    left: 243vw;
-}
-
-
-.info-monaco {
-    left: 228vw;
+.monza {
+    margin-left: 560vw;
 
 }
 
-.titre-monaco {
-    left: 233vw;
-}
-
-.titre-monaco img {
-    width: 3vw;
-    margin-left: 1vw;
+.marina {
+    margin-left: 600vw;
 
 }
 
-
-.rond-baku {
-    left: 275vw;
+.susuka {
+    margin-left: 640vw;
 }
 
-
-.info-baku {
-
-    left: 260vw;
-
+.circuit-usa {
+    margin-left: 680vw;
 }
 
-.titre-baku {
-    left: 265vw;
-
+.zandvoort {
+    margin-left: 720vw;
 }
 
-
-.titre-baku img {
-    width: 3vw;
-    margin-left: 1vw;
-
-}
-
-.rond-montreal {
-    left: 310vw;
-}
-
-
-.info-montreal {
-    left: 295vw;
-
-}
-
-.titre-montreal {
-    left: 295vw;
-}
-
-
-.rond-silverstone {
-    left: 340vw;
-}
-
-
-.info-silverstone {
-    left: 330vw;
-
-}
-
-.titre-silverstone {
-    left: 330vw;
-}
-
-
-.rond-red-bull-ring {
-    left: 375vw;
-}
-
-
-.info-red-bull-ring {
-    left: 360vw;
-
-}
-
-.titre-red-bull-ring {
-    left: 367vw;
-}
-
-.titre-red-bull-ring img {
-    width: 3vw;
-    margin-left: 1vw;
-
-}
-
-
-.rond-paul-ricard {
-    left: 405vw;
-}
-
-
-.info-paul-ricard {
-    left: 392vw;
-
-}
-
-.titre-paul-ricard {
-    left: 395vw;
-}
-
-.titre-paul-ricard img {
-    width: 3vw;
-    margin-left: 1vw;
-
-}
-
-
-
-.rond-hungaroring {
-    left: 437vw;
-}
-
-
-.info-hungaroring {
-    left: 425vw;
-
-}
-
-.titre-hungaroring {
-    left: 430vw;
-}
-
-
-.rond-spa {
-    left: 468vw;
-}
-
-
-.info-spa {
-    left: 455vw;
-
-}
-
-.titre-spa {
-    left: 455vw;
-}
-
-.titre-spa img {
-    width: 3vw;
-    margin-left: 1vw;
-
-}
-
-
-.rond-zandvoort {
-    left: 510vw;
-}
-
-
-.info-zandvoort {
-    left: 495vw;
-
-}
-
-.titre-zandvoort {
-    left: 500vw;
-}
-
-
-.rond-monza {
-    left: 540vw;
-}
-
-
-.info-monza {
-    left: 530vw;
-
-}
-
-.titre-monza {
-    left: 530vw;
+.rodriguez {
+    margin-left: 760vw;
 }
 
 .texte-information p {
@@ -1377,20 +1276,8 @@ a {
         font-size: 1.5em;
     }
 
-    /* .page-ecurie p {
-        font-size: 0.8em;
-    } */
-
-    /* .leclerc img {
-        height: 25vh;
-    } */
-
-    /* .nom-pilote p {
-        font-size: 1.5em;
-    } */
-
     .logo-team {
-        margin-top: 20vh;
+        margin-top: 5vh;
     }
 
 
@@ -1413,16 +1300,7 @@ a {
         top: 24vh
     }
 
-    /* .leclerc {
-        margin-top: 2vh;
-    }
-
-    .perez {
-        margin-top: 2vh;
-    } */
 }
-
-
 
 
 @media(max-width: 850px) {
@@ -1469,6 +1347,7 @@ a {
 
     .palmares-colone-1 {
         margin-left: 10vw;
+        width: 25vw;
     }
 
     h4 {
@@ -1490,7 +1369,7 @@ a {
 
     .titre-circuit {
         width: 20vw;
-        top: 7vh;
+        top: 9vh;
         /* margin-top: 10vh; */
     }
 
@@ -1514,21 +1393,21 @@ a {
         width: 5px;
     }
 
-    .titre-bahrain {
+    /* .titre- rain {
         left: -5vw;
-    }
+    } */
 
     .ligne {
-        top: 16vh;
+        top: 24vh;
     }
 
     .rond {
-        top: 15vh;
+        top: 22vh;
     }
 
     .info-circuit {
 
-        top: 21vh;
+        top: 34vh;
         width: 23vw;
 
     }
@@ -1557,11 +1436,24 @@ a {
         font-size: 4em;
     }
 
+    .line-up img {
+        width: 45vw;
+    }
+
+    .planning img {
+        width: 45vw;
+    }
+
 }
 
 
 
 @media(max-width: 450px) {
+
+    .sound {
+        margin-right: 16vw;
+    }
+
     .titre-img {
         display: block;
     }
@@ -1665,10 +1557,10 @@ a {
     }
 
 
-    .titre-circuit img {
-        /* width: 5vw; */
+    /* .titre-circuit img {
+        width: 5vw;
         height: 1vh;
-    }
+    } */
 
     .ligne {
         height: 11px;
@@ -1685,9 +1577,9 @@ a {
         font-size: 0.6em;
     }
 
-    .titre-bahrain {
+    /* .titre- rain {
         left: -8vw;
-    }
+    } */
 
     .classement-circuit {
         width: 27vw;

@@ -1,5 +1,30 @@
 gsap.registerPlugin(ScrollTrigger);
 
+
+
+let music = document.querySelector('#music');
+
+
+
+
+document.querySelector('.sound').addEventListener('click', play_audio);
+
+// Fonction pour la music 
+
+function play_audio() {
+	if (music.paused) {
+		document.querySelector("#music").play();
+		document.querySelector("#sound-on").style.display= "block";
+        document.querySelector("#sound-off").style.display= "none";
+
+	} else { 
+		music.pause();
+		document.querySelector("#sound-on").style.display= "none";
+        document.querySelector("#sound-off").style.display= "block";
+	}
+}
+
+
 gsap.from('.intro-img', {opacity:0, xPercent:-60, duration:1, ease: "power4.out" ,delay:0.4});
 gsap.from('.logo', {opacity:0, Scale:0.7, duration:0.9, ease: "power4.out",delay:0.2});
 
@@ -316,6 +341,104 @@ gsap.from(".ricciardo",{
 
 })
 
+gsap.from(".vettel",{
+    scrollTrigger:{
+        trigger:".vettel",
+        scrub: 1,
+        ease: "power2"
+    },
+    opacity:0.6,scale:0.8, duration:1
+     
+
+})
+
+gsap.from(".mag",{
+    scrollTrigger:{
+        trigger:".mag",
+        scrub: 1,
+        ease: "power2"
+    },
+    opacity:0.6,scale:0.8, duration:1
+     
+
+})
+
+gsap.from(".gasly",{
+    scrollTrigger:{
+        trigger:".gasly",
+        scrub: 1,
+        ease: "power2"
+    },
+    opacity:0.6,scale:0.8, duration:1
+     
+
+})
+
+gsap.from(".stroll",{
+    scrollTrigger:{
+        trigger:".stroll",
+        scrub: 1,
+        ease: "power2"
+    },
+    opacity:0.6,scale:0.8, duration:1
+     
+
+})
+
+gsap.from(".mick",{
+    scrollTrigger:{
+        trigger:".mick",
+        scrub: 1,
+        ease: "power2"
+    },
+    opacity:0.6,scale:0.8, duration:1
+     
+
+})
+
+gsap.from(".yuki",{
+    scrollTrigger:{
+        trigger:".yuki",
+        scrub: 1,
+        ease: "power2"
+    },
+    opacity:0.6,scale:0.8, duration:1
+     
+
+})
+
+gsap.from(".zhou",{
+    scrollTrigger:{
+        trigger:".zhou",
+        scrub: 1,
+        ease: "power2"
+    },
+    opacity:0.6,scale:0.8, duration:1
+     
+
+})
+
+gsap.from(".albon",{
+    scrollTrigger:{
+        trigger:".albon",
+        scrub: 1,
+        ease: "power2"
+    },
+    opacity:0.6,scale:0.8, duration:1
+     
+
+})
+
+gsap.from(".latifi",{
+    scrollTrigger:{
+        trigger:".latifi",
+        scrub: 1,
+        ease: "power2"
+    },
+    opacity:0.6,scale:0.8, duration:1
+     
+
+})
 
 // gsap.from("#sous-titre-circuit",{
 //     scrollTrigger:{
