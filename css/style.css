@@ -899,7 +899,7 @@ a {
 
 .circuit-plus-info {
     height: 100vh;
-    width: 100vw;
+    width: 900vw;
 }
 
 .russell {
@@ -911,13 +911,13 @@ a {
 
     margin-left: 27vw;
     position: relative;
-    width: 850vw;
+    width: 900vw;
     height: 100vh;
 }
 
 .ligne {
     background-color: #14151F;
-    width: 760vw;
+    width: 840vw;
     height: 20px;
     position: absolute;
     top: 25vh;
@@ -1097,6 +1097,16 @@ rain {
 
 .rodriguez {
     margin-left: 760vw;
+}
+
+.jose-carlos {
+    margin-left: 800vw;
+
+}
+
+.yas-marina {
+    margin-left: 840vw;
+
 }
 
 .texte-information p {
