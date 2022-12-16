@@ -1463,6 +1463,16 @@ rain {
         width: 45vw;
     }
 
+
+}
+
+@media(max-width:550px) {
+
+    .palmares-ecurie {
+        display: flex;
+        flex-direction: column;
+
+    }
 }
 
 
