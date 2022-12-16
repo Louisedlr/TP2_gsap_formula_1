@@ -145,6 +145,11 @@ p {
     font-size: 1.5em;
 }
 
+
+.intro p {
+    font-size: 1.2em;
+}
+
 .palmares-ecurie p {
     color: #14151F;
     font-weight: 100;
